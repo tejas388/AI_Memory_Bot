@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conversation History - AI Memory Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+
+            <div class="header-left">
+
+                <div class="chat-logo">
+                    🧠
+                </div>
+
+                <div>
+                    <h1>AI Memory Assistant</h1>
+                    <p id="logged-user">
+                        Personal AI Assistant
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button
+                    class="nav-button"
+                    onclick="openChat()">
+                    💬 Chat
+                </button>
+
+                <button
+                    class="nav-button"
+                    onclick="openMemories()">
+                    🧠 Memories
+                </button>
+
+                <button
+                    class="logout-button"
+                    onclick="logout()">
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <main class="history-dashboard">
+
+            <div class="history-title">
+
+                <div>
+
+                    <h2>💭 Conversation History</h2>
+
+                    <p>
+                        View your previous conversations
+                        with the AI assistant.
+                    </p>
+
+                </div>
+
+                <button
+                    class="refresh-button"
+                    onclick="loadHistory()">
+                    ↻ Refresh
+                </button>
+
+            </div>
+
+
+            <div
+                id="history-count"
+                class="memory-count">
+                Loading conversations...
+            </div>
+
+
+            <div
+                id="history-list"
+                class="history-list">
+
+                <div class="memory-loading">
+                    Loading your conversation history...
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

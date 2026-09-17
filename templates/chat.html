@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tejas AI Memory Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- ==================================================
+             HEADER
+             ================================================== -->
+
+        <header class="chat-header">
+
+            <div class="header-left">
+
+                <div class="chat-logo">
+                    🧠
+                </div>
+
+                <div>
+
+                    <h1>
+                        AI Memory Assistant
+                    </h1>
+
+                    <p id="logged-user">
+                        Personal AI Assistant
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div class="header-actions">
+
+                <button
+                    class="nav-button"
+                    onclick="openMemories()"
+                >
+                    🧠 Memories
+                </button>
+
+<button class="nav-button" onclick="openHistory()">💭 History</button>
+
+                <button
+                    class="logout-button"
+                    onclick="logout()"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             MESSAGES
+             ================================================== -->
+
+        <main
+            id="chat-messages"
+            class="chat-messages"
+        >
+
+            <div class="welcome-message">
+
+                <div class="welcome-icon">
+                    🧠
+                </div>
+
+                <h2>
+                    Welcome to your AI Assistant
+                </h2>
+
+                <p>
+                    I can remember useful information about you
+                    and use it in future conversations.
+                </p>
+
+            </div>
+
+        </main>
+
+
+        <!-- ==================================================
+             INPUT
+             ================================================== -->
+
+        <footer class="chat-input-area">
+
+            <form id="chat-form">
+
+                <input
+                    type="text"
+                    id="message-input"
+                    placeholder="Message your AI assistant..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    id="send-button"
+                >
+                    Send
+                </button>
+
+            </form>
+
+
+            <p class="input-hint">
+                Your conversations can be remembered by your AI.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

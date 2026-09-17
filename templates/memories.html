@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Memories - AI Memory Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- ==================================================
+             HEADER
+             ================================================== -->
+
+        <header class="chat-header">
+
+            <div class="header-left">
+
+                <div class="chat-logo">
+                    🧠
+                </div>
+
+                <div>
+
+                    <h1>
+                        AI Memory Assistant
+                    </h1>
+
+                    <p id="logged-user">
+                        Personal AI Assistant
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="nav-button"
+                    onclick="openChat()"
+                >
+                    💬 Chat
+                </button>
+
+
+                <button
+                    class="nav-button"
+                    onclick="openHistory()"
+                >
+                    💭 History
+                </button>
+
+
+                <button
+                    class="logout-button"
+                    onclick="logout()"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             MEMORY DASHBOARD
+             ================================================== -->
+
+        <main class="memory-dashboard">
+
+            <div class="memory-title">
+
+                <div>
+
+                    <h2>
+                        🧠 My Memories
+                    </h2>
+
+                    <p>
+                        Information your AI assistant remembers about you.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="refresh-button"
+                    onclick="loadMemories()"
+                >
+                    ↻ Refresh
+                </button>
+
+            </div>
+
+
+            <!-- Memory count -->
+
+            <div
+                id="memory-count"
+                class="memory-count"
+            >
+                Loading memories...
+            </div>
+
+
+            <!-- Memories -->
+
+            <div
+                id="memory-list"
+                class="memory-list"
+            >
+
+                <div class="memory-loading">
+                    Loading your memories...
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
